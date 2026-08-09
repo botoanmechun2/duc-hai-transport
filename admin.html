@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Đức Hải | Quản trị báo giá</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="admin-body">
+<div id="login" class="login-screen">
+  <div class="login-card"><div class="logo big">ĐH</div><h1>Đức Hải Admin</h1><p>Đăng nhập để quản lý yêu cầu báo giá.</p>
+    <form id="loginForm">
+      <input name="username" placeholder="Tài khoản" value="admin" required>
+      <input name="password" type="password" placeholder="Mật khẩu" required>
+      <button class="btn submit">Đăng nhập</button>
+      <div id="loginMsg" class="form-msg"></div>
+    </form>
+  </div>
+</div>
+<div id="dashboard" hidden>
+<header class="admin-top"><div class="brand"><div class="logo">ĐH</div><b>QUẢN TRỊ ĐỨC HẢI</b></div><button id="logout" class="ghost">Đăng xuất</button></header>
+<main class="container admin-main">
+  <div class="admin-heading"><div><span>QUẢN LÝ KHÁCH HÀNG</span><h1>Yêu cầu báo giá</h1></div><button id="refresh" class="btn">↻ Làm mới</button></div>
+  <div class="stats">
+    <div><small>Tất cả</small><b id="sAll">0</b></div><div><small>Mới</small><b id="sNew">0</b></div><div><small>Đã liên hệ</small><b id="sContact">0</b></div><div><small>Đã báo giá</small><b id="sQuoted">0</b></div><div><small>Hoàn tất</small><b id="sDone">0</b></div>
+  </div>
+  <div class="filters"><input id="search" placeholder="Tìm tên, SĐT, hàng hóa, tuyến đường..."><select id="status"><option value="">Tất cả trạng thái</option><option>Mới</option><option>Đã liên hệ</option><option>Đã báo giá</option><option>Hoàn tất</option></select></div>
+  <div class="table-wrap"><table><thead><tr><th>Mã</th><th>Khách hàng</th><th>SĐT</th><th>Hàng hóa</th><th>Tuyến</th><th>Thời gian</th><th>Trạng thái</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+</div>
+<div id="modal" class="modal" hidden><div class="modal-card"><button class="close" id="close">×</button><div id="detail"></div></div></div>
+<script src="/admin.js"></script>
+</body>
+</html>

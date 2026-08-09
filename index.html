@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vận Tải Đức Hải | Yêu cầu báo giá</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav container">
+    <div class="brand"><div class="logo">ĐH</div><div><b>VẬN TẢI ĐỨC HẢI</b><small>CÔNG TY TNHH DỊCH VỤ VẬN TẢI ĐỨC HẢI</small></div></div>
+    <a class="phone" href="tel:0961558258">0961 558 258</a>
+  </nav>
+  <div class="hero-content container">
+    <div>
+      <span class="badge">VẬN CHUYỂN TOÀN QUỐC</span>
+      <h1>Gửi hàng nhanh chóng,<br><em>nhận báo giá dễ dàng.</em></h1>
+      <p>Nhận ghép hàng, bao xe, chuyển nhà, văn phòng, kho xưởng và vận chuyển hàng hóa Bắc – Trung – Nam.</p>
+      <a href="#quote" class="btn">Yêu cầu báo giá →</a>
+    </div>
+    <div class="truck-card">🚚<strong>ĐỨC HẢI</strong><span>AN TOÀN · ĐÚNG HẸN · TẬN TÂM</span></div>
+  </div>
+</header>
+
+<main>
+<section class="services container">
+  <div><b>📦 Ghép hàng</b><span>Hàng nhỏ lẻ, hàng khối</span></div>
+  <div><b>🚛 Bao xe</b><span>Xe riêng theo yêu cầu</span></div>
+  <div><b>🏠 Chuyển nhà</b><span>Trọn gói, tận nơi</span></div>
+  <div><b>🏢 Kho xưởng</b><span>Máy móc, nội thất</span></div>
+</section>
+
+<section id="quote" class="quote-wrap">
+  <div class="container">
+    <div class="section-title"><span>01</span><div><h2>Yêu cầu báo giá</h2><p>Điền thông tin, nhân viên Đức Hải sẽ liên hệ lại để tư vấn và báo giá.</p></div></div>
+    <form id="quoteForm" class="quote-form">
+      <div class="grid two">
+        <label>Họ và tên *<input name="customer_name" required placeholder="Nguyễn Văn A"></label>
+        <label>Số điện thoại *<input name="phone" required inputmode="tel" placeholder="0961 558 258"></label>
+      </div>
+      <div class="grid two">
+        <label>Loại hàng hóa *<input name="cargo" required placeholder="Nội thất, máy móc, hàng tiêu dùng..."></label>
+        <label>Số lượng / khối lượng<input name="quantity" placeholder="Ví dụ: 2 tấn / 10 kiện"></label>
+      </div>
+      <div class="grid two">
+        <label>Điểm đi *<input name="from_location" required placeholder="Quận/Huyện, Tỉnh/Thành"></label>
+        <label>Điểm đến *<input name="to_location" required placeholder="Quận/Huyện, Tỉnh/Thành"></label>
+      </div>
+      <div class="grid two">
+        <label>Ngày dự kiến vận chuyển<input type="date" name="pickup_date"></label>
+        <label>Ghi chú<textarea name="note" rows="3" placeholder="Yêu cầu bốc xếp, giao tận nơi..."></textarea></label>
+      </div>
+      <button class="btn submit" type="submit">Gửi yêu cầu báo giá</button>
+      <div id="formMsg" class="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<section class="contact container">
+  <div><span>Liên hệ trực tiếp</span><h2>0961 558 258</h2><p>Hotline & Zalo</p></div>
+  <div><span>Hotline 2</span><h2>0862 680 258</h2><p>Sẵn sàng hỗ trợ</p></div>
+</section>
+</main>
+<footer>© 2026 CÔNG TY TNHH DỊCH VỤ VẬN TẢI ĐỨC HẢI · <a href="/admin">Quản trị</a></footer>
+<script src="/app.js"></script>
+</body>
+</html>
